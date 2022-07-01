@@ -9,7 +9,7 @@
 
 - Instalar o `Node.js`
 - Instalar no chrome `React Developer Tools`
-- Plugin do Vs.Code -> Origamid next, Live Server, Color Highlight, Prettier, ES7 React/Redux/GraphQL Snippets
+- Plugin do Vs.Code -> `Origamid next`, `Live Server`, `Color Highlight`, `Prettier`, `ES7 React/Redux/GraphQL Snippets`
 
 ##Links
 - https://github.com/origamid/origamid-next-vscode
