@@ -1,26 +1,26 @@
-# react-origamid
+# React-Origamid
 
 **Projeto criado para reproduzir o treinamento da origamid, voltado para React.JS**
 <h4 align="left"> 
 	🚧  React.JS 🚀 Em andamento... 🚧
 </h4>
 
-##Pré-requisitos
+## Pré-requisitos
 
 - Instalar o `Node.js`
 - Instalar no chrome `React Developer Tools`
 - Plugin do Vs.Code -> `Origamid next`, `Live Server`, `Color Highlight`, `Prettier`, `ES7 React/Redux/GraphQL Snippets`
 
-##Links
+## Links
 - https://github.com/origamid/origamid-next-vscode
 
 
 
-# Origamid Next - Visual Studo Code Setup
+## Origamid Next - Visual Studo Code Setup
 
 ![Screenshot](https://raw.githubusercontent.com/origamid/origamid-next-vscode/master/screenshot.png)
 
-# Instalação
+## Instalação
 
 1. Abrir o **Extensions** sidebar panel no VS Code. `View → Extensions`
 2. Procurar por `Origamid Theme`
@@ -35,8 +35,12 @@
 Essa é a mesma tipografia que utilizo no site da Origamid. As itálicas são lindas e por isso não canso de usar a mesma.
 
 ## Configurações Recomendadas
+```bash
+Atalhos:
+(ctrl+shift+p | settings.json)
+(ctrl+shift+j | chrome console)
+```
 
-Extensões
 
 ```
 $ code --install-extension
