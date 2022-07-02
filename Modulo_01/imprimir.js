@@ -1,3 +1,11 @@
+export function letraMaiuscula(texto) {
+  return texto.toUpperCase();
+}
+
+export function letraMinuscula(texto) {
+  return texto.toLowerCase();
+}
+
 const menu = {
   seletor: ".principal2",
 };
@@ -21,10 +29,6 @@ function mouseEvent(event) {
 }
 document.addEventListener("click", mouseEvent);
 
-const frutas = ["maça", "banana", "melancia"];
-const [fruta01, fruta02, fruta03] = frutas;
-console.log(fruta01, fruta02, fruta03);
-
 //spread
 function numeros(...num) {
   //array
@@ -34,11 +38,19 @@ function numeros(...num) {
   console.log("Maior: ", Math.max(...num));
   console.log("Menor: ", Math.min(...num));
 }
-numeros(9, 8, 7, 6, 5, 4, 3, 0);
+//numeros(9, 8, 7, 6, 5, 4, 3, 0);
+
+const frutas = ["maça", "banana", "melancia"];
+const [fruta01, fruta02, fruta03] = frutas;
+//console.log(fruta01, fruta02, fruta03);
 
 //objeto
 const pesssoa = {
   nome: "Helio",
   idade: "33",
 };
-console.log(pesssoa);
+//console.log(pesssoa);
+
+const valor = 20;
+const resultado = valor <= 20 ? "Sim" : "Não "; //Operador ternário
+console.log("result:", resultado);
