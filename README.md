@@ -11,9 +11,13 @@
 - Instalar no chrome `React Developer Tools`
 - Plugin do Vs.Code -> `Origamid next`, `Live Server`, `Color Highlight`, `Prettier`, `ES7 React/Redux/GraphQL Snippets`
 - Iniciar um pacote NPM na pasta do aplicativo
-`> npm init -y`
+```bash
+ npm init -y
+ ```
 - Instalar o webpack, webpack-cli e webpack-dev-server
-`> npm install webpack webpack-cli webpack-dev-server --save-dev`
+```bash
+ npm install webpack webpack-cli webpack-dev-server --save-dev
+ ```
 - Criar arquivos mínimos
  ```
    - index.html
