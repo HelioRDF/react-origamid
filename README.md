@@ -10,6 +10,17 @@
 - Instalar o `Node.js`
 - Instalar no chrome `React Developer Tools`
 - Plugin do Vs.Code -> `Origamid next`, `Live Server`, `Color Highlight`, `Prettier`, `ES7 React/Redux/GraphQL Snippets`
+- Iniciar um pacote NPM na pasta do aplicativo
+`> npm init -y`
+- Instalar o webpack, webpack-cli e webpack-dev-server
+`> npm install webpack webpack-cli webpack-dev-server --save-dev`
+- Criar arquivos mínimos
+ ```
+   - index.html
+   - src/
+   - index.js
+   ```
+
 
 ## Links
 - https://github.com/origamid/origamid-next-vscode
@@ -52,6 +63,14 @@ naumovs.color-highlight
 ritwickdey.LiveServer
 octref.vetur
 dsznajder.es7-react-js-snippets
+```
+
+```js
+  <!-- Adicionar o React. -->
+  <!-- Nota: ao fazer o deploy, substitua "development.js" por "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
 ```js
