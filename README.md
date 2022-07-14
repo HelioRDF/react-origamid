@@ -10,7 +10,7 @@
 - Instalar o `Node.js`
 - Instalar no chrome `React Developer Tools`
 - Plugin do Vs.Code -> `Origamid next`, `Live Server`, `Color Highlight`, `Prettier`, `ES7 React/Redux/GraphQL Snippets`
-- Iniciar um pacote NPM na pasta do aplicativo
+- Iniciar um pacote NPM na pasta do aplicativo, criar arquivo package.json
 ```bash
  npm init -y
  ```
@@ -21,9 +21,31 @@
 - Criar arquivos mínimos
  ```
    - index.html
-   - src/
-   - index.js
+   - src/index.js
    ```
+- Adicionar os scripts de desenvolvimento e build ao package.json
+``` script
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```
+- Adicionar arquivo webpack.config.js para ajustar dirname
+```
+const path = require("path");
+
+module.exports = {
+  //
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "/"),
+    },
+    compress: true,
+    port: 9000,
+  },
+};
+```
 
 
 ## Links
@@ -55,7 +77,6 @@ Atalhos:
 (ctrl+shift+p | settings.json)
 (ctrl+shift+j | chrome console)
 ```
-
 
 ```
 $ code --install-extension
