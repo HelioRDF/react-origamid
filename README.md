@@ -31,12 +31,51 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
+
+- Executar Script
+``` script
+ npm start
+ npm run build
+```
+- Instalar React
+``` script
+ npm install react react-dom
+```
+
+- Instalar Babel
+``` script
+ npm install @babel/core @babel/preset-react babel-loader --save-dev
+```
+
+- Instalar Loaders (CSS)
+``` script
+ npm install style-loader css-loader --save-dev
+```
+
 - Adicionar arquivo webpack.config.js para ajustar dirname
 ```
 const path = require("path");
 
 module.exports = {
-  //
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-react"],
+          },
+        },
+      },
+    ],
+  },
+  //...
   devServer: {
     static: {
       directory: path.join(__dirname, "/"),
@@ -45,6 +84,7 @@ module.exports = {
     port: 9000,
   },
 };
+
 ```
 
 
