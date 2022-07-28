@@ -254,6 +254,7 @@ Essa é a mesma tipografia que utilizo no site da Origamid. As itálicas são li
 Atalhos:
 (ctrl+shift+p | settings.json)
 (ctrl+shift+j | chrome console)
+escrever no arquivo .js -> rafce para criar estrutura react
 ```
 
 ```
